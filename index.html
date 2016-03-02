@@ -3,21 +3,40 @@ layout: home
 ---
 
 <div class="home">
+    <div class="intro">
+      <p>
+        The International Olympic Committee just announced that they will be creating a "Team Refugee" to compete in the 2016 Summer Games.
 
-  <h1 class="page-heading">Posts</h1>
+        <b>Thank the IOC and let them know you stand with Team Refugee!</b>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        Add your name to the thank you message by using the form below:
+      </p>
+      <p class="note text"><i>
+        To the Members of the International Olympic Committee:
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        Thank you for recognizing and honoring refugee athletes at the 2016 Summer Games in Rio. 
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        Team Refugee will bring hope to millions of refugees worldwide and help bring this important issue to a global stage. 
 
+        This summer, I will be cheering for Team Refugee! </i>
+      </p>
+    </div>
+ <div class="form-wrapper">
+    <form class="form-horizontal" id="petition">
+      <div class="form-group">
+        <label for="name">name*</label>
+        <input type="text" id="name" name="NAME" required>
+      </div>
+      <div class="form-group">
+        <label for="email">email*</label>
+        <input type="email" id="email" name="EMAIL" required>
+      </div>
+      <div class="form-group">
+        <label for="zip">zip*</label>
+        <input type="zip" id="zip" name="ZIP">
+      </div>
+      <input type="submit" value="Submit" class="submit-button">
+    </form>
+    <p id="conf-message"></p>
+  </div>
 </div>
