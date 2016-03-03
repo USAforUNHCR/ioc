@@ -2,6 +2,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta property ="twitter:card" content="summary_large_image"/>
+  <meta property="og:url" content="http://teamrefugee.org"/>
+  <meta property="og:title" content="Stand with Team Refugee"/>
+  <meta property="og:description" content="The International Olympic Committee just announced that they will be creating a "Team Refugee" to compete in the 2016 Summer Games. Thank the IOC and let them know you stand with Team Refugee!"/>
+  <meta property="og:image" content="http://womenonthe.run/images/cover.jpg"/>
+  <meta property="twitter:image" content=""/>
+  <meta property="twitter:site" content="@UNRefugeeAgency"/>
+  <meta property="twitter:creator" content="@UNRefugeeAgency"/>
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
@@ -12,6 +21,9 @@
 
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   {% stylesheet home %}
+  {% stylesheet confirmation %}
     <script type="text/javascript" src="https://cdn.thegroundwork.com/groundworkjs/0.2.7/groundwork.min.js"></script>
   {% javascript home %}
+  {% javascript querystring.min %}

@@ -27,7 +27,7 @@ function formListener() {
     var data = splitNames(form.find('[name="NAME"]').val());
     data.email = form.find('[name="EMAIL"]').val();
     data.postalCode = form.find('[name="ZIP"]').val();
-    data.source = "olympic signup";
+    data.source = querystring.parse().src;
     sendData(data);
     form.find('input').val('');
     form.find('[type="submit"]').prop('value','Thanks!');
@@ -41,6 +41,7 @@ function sendData(data) {
   gw.supporters.create(data)
   .then(function(res){
     console.log(res);
+    // window.location.href = '../confirmation.html';
   })
   .catch(function(res){
     console.log(res);
