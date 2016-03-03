@@ -23,6 +23,15 @@ body{
 .wrapper{
   padding-top: 2em;
   text-align: center;
+  & span{
+    background-color: black;
+    padding: 0 0.5em 0 0.5em;
+    & a{
+      &:visited{
+        color: lighten(blue,40%);
+      }
+    }
+  }
 }
 
 .form-wrapper{
