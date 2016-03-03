@@ -1,6 +1,6 @@
 var gw = new Groundwork ({
     'api_url': 'https://api.thegroundwork.com',
-    'oauth_client_id': 'pub-un-test.olympics--Gp9kL6zhJ20.teMAuXMAvmtMjh.9KLXwNbiumd.dMsxFGwwFYkUqqjb2UTtRumvrf_9faJXkCV8faQV9fhTGXg'
+    'oauth_client_id': 'pub-un.olympics--qGUkQGdaepwHPMx9fQNRRGgy5hUHUlFzXZNtNTNI9pixWmkJwNuZDiOb7O7tJ4sJ50kZKryN8GOVW6ipWkRS6g'
   });
 
 function splitNames(name){
