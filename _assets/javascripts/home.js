@@ -41,7 +41,7 @@ function sendData(data) {
   gw.supporters.create(data)
   .then(function(res){
     console.log(res);
-    // window.location.href = '../confirmation.html';
+    window.location.href = '../confirmation.html';
   })
   .catch(function(res){
     console.log(res);
