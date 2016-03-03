@@ -4,7 +4,7 @@ email: hello@unrefugees.org
 description: > # this means to ignore newlines until "baseurl:"
   The International Olympic Committee just announced that they will be creating a "Team Refugee" to compete in the 2016 Summer Games. Thank the IOC and let them know you stand with Team Refugee!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://teamrefugee.org" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
