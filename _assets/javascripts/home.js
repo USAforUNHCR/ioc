@@ -27,7 +27,7 @@ function formListener() {
     var data = splitNames(form.find('[name="NAME"]').val());
     data.email = form.find('[name="EMAIL"]').val();
     data.postalCode = form.find('[name="ZIP"]').val();
-    querystring.parse().src ? data.source = querystring.parse().src : null;
+    querystring.parse().src ? data.source = querystring.parse().src : data.source = "teamrefugee.org";
     sendData(data);
     form.find('input').val('');
     form.find('[type="submit"]').prop('value','Thanks!');
