@@ -27,7 +27,7 @@ function formListener() {
     var data = splitNames(form.find('[name="NAME"]').val());
     data.email = form.find('[name="EMAIL"]').val();
     data.postalCode = form.find('[name="ZIP"]').val();
-    data.source = querystring.parse().src;
+    querystring.parse().src ? data.source = querystring.parse().src : null;
     sendData(data);
     form.find('input').val('');
     form.find('[type="submit"]').prop('value','Thanks!');
